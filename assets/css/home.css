@@ -1,0 +1,1359 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+body{
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar{
+    width: 3px;
+    }
+    html::-webkit-scrollbar-thumb{
+    background: white;
+    }
+    html::-webkit-scrollbar-track{
+    background: rgb(22, 83, 22);
+    }
+  
+    /* General Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    /* Styles for screens smaller than or equal to 800px */
+     /* HERO SECTION TOP ================================================================ */
+     
+     *{
+        font-size: 19px;
+     }
+     .hero-section {
+        background-image: url('/images/Vaavu\ Atoll\,\ Maldives.png');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+        overflow: hidden;
+      }
+      .hero-text h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .hero-text p{
+        font-size: 17px;
+      }
+      .hero-buttons .btn {
+        margin: 10px;
+      }
+      .travel-card {
+        border: none;
+        transition: transform 0.5s ease-in-out;
+      }
+      .travel-card:hover {
+        transform: scale(0.98);
+        background-color: #2c50332d;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      
+      #packages .row .col-md-4{
+        width: 100%;
+      }
+      #packages .row .col-md-4 .travel-card{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       margin-bottom: 15px;
+
+      }
+      #packages .row .col-md-4 .travel-card img{
+       width: 50%;
+       object-fit: cover;
+       object-position: center;
+       border-radius: 20px;
+      }
+      #packages #img1 {
+        border-left: #0b662c solid 5px;
+      }
+      #packages #img3 {
+        border-left: #2c7bc4 solid 5px;
+      }
+
+      #packages .row .card-text{
+        font-size: 15px;
+     }
+    
+     #packages .row h5{
+        color: #2d6f3c;
+        font-size: 18px;
+     }
+     #packages .row a{
+        font-size: 14px;
+        border-radius: 5px;
+     }
+    
+
+    /* ================================================================================== */
+
+
+
+
+
+
+/* STICKY PANEL ========================================================================= */
+
+#sticky-sidebar {
+display: none;
+
+}
+
+#sticky-sidebar-2 {
+display: none;
+
+}
+
+/* ======================================================================================= */
+
+
+
+/* TESTIMONIAL ============================================================================= */
+
+
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  blockquote {
+    font-size: 19px;
+    color: #333;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 5px solid #28a745;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  blockquote p {
+    font-style: italic;
+    font-size: 19px;
+  }
+  
+  blockquote-footer {
+    margin-top: 15px;
+    color: #777;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #28a7462b;
+    border-radius: 50%;
+    transform: scale(0.8);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+/* ================================================================================================ */
+
+
+
+
+
+
+/* ABOUT SECTION =================================================================== */
+
+#about-ecotravel{
+    text-align: left;
+    overflow: hidden;
+}
+
+#about-ecotravel h2{
+    color: #28a745;
+    font-weight: bold;
+}
+
+
+
+#about-eco-travel-div{
+    background-color: #124c1d20;
+    overflow: hidden;
+}
+#about-eco-travel-div .col-md-6{
+    padding: 30px;
+    font-size: large;
+    
+}
+#eco-contact-form label{
+    font-size: medium;
+}
+#eco-contact-form button{
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#image-about-eco{
+    width: 100%;
+    text-align: center;
+}
+#image-about-eco video{
+    width: 80%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom:#0b662c solid 10px;
+}
+
+
+
+/* ======================================================================================= */
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.eco-hero {
+    background-image: url('/images/montain.png'); /* Change to your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    border-bottom: #0b662c solid 10px;
+    border-top: #0b662c solid 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+
+.eco-hero-content {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.eco-hero-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.eco-hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.dream-description{
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eco-learn-more {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.eco-search-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    width: 95%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.eco-search-form h2 {
+    margin-bottom: 20px;
+    color:#0b662c;
+    font-size: 18px;
+}
+
+.eco-search-form label {
+    display: block;
+    margin-bottom: 5px;
+    color:#0b662c;
+    font-size: 15px;
+}
+
+.eco-search-form select,
+.eco-search-form input {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.btn-eco-search {
+    background-color: #0e6223; /* Orange color */
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* echo slide  */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .eco-slider {
+    display: flex;
+    flex-direction: column;
+    transition: transform 2s ease-in-out;
+  }
+  
+  .eco-package-item {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    transform: scale(0.95);
+  }
+  .eco-package-item a{
+    font-size: 16px;
+    border-radius: 10px;
+    transform: scale(0.9);
+  }
+  
+  .eco-package-item.active {
+    opacity: 1;
+  }
+  /* Marker styling */
+.slider-markers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .slider-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd; /* Default marker color */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .slider-marker.active {
+    background-color: #007bff; /* Active marker color */
+  }
+  
+
+
+
+/* Gallery Section Styling */
+.gallery-section {
+    display: none;
+  }
+  
+
+
+
+/* =============================================================== */
+
+
+
+
+
+/* ============================================================================= */
+
+
+
+
+
+
+
+/* Sustainability Section Styles ============================================================================ */
+#sustainability-section {
+    position: relative;
+    margin-top: 100px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+}
+
+#sustainability-heading {
+    font-size: 21px; /* Larger heading for emphasis */
+    color: #2d6d24; /* Darker shade for contrast */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+#sustainability-row {
+    margin-top: 20px; /* Space above the row */
+}
+
+#sustainability-row p{
+    font-size: 18px;
+}
+#sustainability-row h5{
+    color: #124c1d;
+    font-size: 20px;
+}
+#sustainability-row .col-md-4 {
+    padding: 15px; /* Padding for individual columns */
+}
+
+#carbon-offset, #eco-lodging, #local-communities {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Internal padding */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Card shadow */
+}
+
+#carbon-offset:hover, #eco-lodging:hover, #local-communities:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#carbon-offset img, 
+#eco-lodging img, 
+#local-communities img {
+    width: 100%; /* Full-width images */
+    border-radius: 10px; /* Rounded corners for images */
+    max-height: 200px; /* Set maximum height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+#sustainability-heading {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+}
+
+#sustainability-row .col-md-4 {
+    margin-bottom: 20px; /* Space between columns on smaller screens */
+}
+
+
+
+
+/* ========================================================================================= */
+
+
+
+/* DESTINATION */
+.map-container{
+}
+.map-container #image-eco{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+#travel-checklist{
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    text-align: left;
+}
+#travel-checklist p,label{
+    font-size: medium;
+    text-align: left;
+}
+#travel-checklist h2{
+    font-size: medium;
+    text-align: left;
+    color: #0e6223;
+}
+#travel-checklist button{
+    font-size: medium;
+    border-radius: 5px;
+}
+.map-container #image-eco img{
+    width: 100%;
+    object-fit: cover;
+}
+.map-container p{
+    margin-bottom: 5px;
+}
+
+
+
+/* ================================================== */
+
+
+
+
+
+
+
+
+/* Footer Section  ===================================================================--> */
+
+
+    .footer {
+        background-color: #333; /* Dark background color */
+        padding: 20px;
+        overflow: hidden;
+    }
+    
+    .social-icons a {
+        margin: 0 15px; /* Space between icons */
+    }
+    
+    .quick-links {
+        margin: 20px 0; /* Space above and below quick links */
+    }
+    .footer #links-footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer #links-footer div{
+        width: 45%;
+        text-align: left;
+        font-size: 17px;
+    }
+    
+    #mission-footer{
+        display: none;
+    }
+    .quick-links h4 {
+        margin-bottom: 10px; /* Space below the heading */
+    }
+    
+    .quick-links ul {
+        padding: 0; /* Remove default padding */
+    }
+    
+    .quick-links li {
+        list-style: none; /* Remove bullets */
+        margin: 5px 0; /* Space between list items */
+    }
+    
+    .quick-links a {
+        color: #fff; /* Link color */
+        text-decoration: none; /* Remove underline */
+    }
+    
+    .quick-links a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
+    .contact-info {
+        margin-top: 20px; /* Space above contact info */
+    }
+    
+    .contact-info p {
+        margin: 5px 0; /* Space between contact info items */
+    }
+    
+    .input-group {
+        display: flex; /* Align input and button in a row */
+        justify-content: center; /* Center the input group */
+    }
+    
+    input[type="email"] {
+        border-radius: 0; /* Remove rounded corners for a modern look */
+        border: none; /* No border */
+    }
+    
+    input[type="email"]:focus {
+        outline: none; /* Remove outline on focus */
+    }
+    
+    .btn-primary {
+        border-radius: 0; /* Remove rounded corners for a modern look */
+        margin-left: -1px; /* Align the button with the input */
+    }
+    
+    .footer h3,
+    .footer h4 {
+        color: #28a745; /* Green color for headings */
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 801px) {
+    /* Styles for screens larger than 800px */
+
+
+    *{
+        font-size: 20px;
+    }
+
+
+    .navbar-nav li a{
+        font-size: 23px;
+        color: #109d21;
+        font-weight: bold;
+    }
+    .navbar-nav li #book-now-nav{
+        font-size: 23px;
+        color: white;
+        font-weight: bold;
+    }
+
+
+    /* HERO SECTION TOP ================================================================ */
+    .hero-section {
+        background-image: url('/images/Vaavu\ Atoll\,\ Maldives.png');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+      }
+      .hero-text h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      
+      .hero-buttons .btn {
+        margin: 10px;
+      }
+      .travel-card {
+        border: none;
+        transition: transform 0.2s ease-in-out;
+      }
+      .travel-card:hover {
+        transform: scale(0.98);
+      }
+      #packages .row .col-md-4{
+        width: 90;
+      }
+      /* #packages .row .col-md-4 .travel-card{
+    
+      } */
+      #packages .row .col-md-4 .travel-card img{
+       border-bottom-right-radius: 40px;
+       border-bottom: solid rgb(22, 83, 22) 6px;
+      }
+
+     #packages .row .card-text{
+        font-size: 22px;
+     }
+     #packages .row h5{
+        color: #2d6f3c;
+     }
+/* ================================================================================== */
+
+
+
+
+
+
+
+
+/* STICKY PANEL ========================================================================================= */
+.eco-hero{
+    z-index: 1000;
+    position: relative;
+}
+#sticky-sidebar {
+    position: fixed;
+    top: 30%; /* 50% from top to center it vertically */
+    left: 0; /* Stick it to the left side of the screen */
+    transform: translateY(-50%); /* Adjust to vertically center */
+    width: 150px;
+    background-color: white; /* Eco-friendly green */
+    color: gray;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    text-align: left;
+    animation: slideIn 0.8s ease-in-out; /* Animate sliding in */
+  }
+  
+  #sticky-sidebar img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #sticky-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #sticky-sidebar p {
+    margin: 10px 0;
+  }
+  
+  #sticky-sidebar .book-btn {
+    background-color:#0b662c; /* Bright eco-themed gold */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #sticky-sidebar .book-btn:hover {
+    background-color: #FFA500; /* Bright orange on hover */
+  }
+  
+  @keyframes slideIn {
+    from {
+      left: -250px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    #sticky-sidebar {
+      width: 180px;
+    }
+  
+    #sticky-sidebar .book-btn {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  }
+/* ==================================================================   */
+#sticky-sidebar-2 {
+    position: fixed;
+    top: 75%; /* 50% from top to center it vertically */
+    left: 0; /* Stick it to the left side of the screen */
+    transform: translateY(-50%); /* Adjust to vertically center */
+    width: 150px;
+    background-color: white; /* Eco-friendly green */
+    color: gray;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    text-align: left;
+    animation: slideIn 0.8s ease-in-out; /* Animate sliding in */
+  }
+  
+  #sticky-sidebar-2 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #sticky-sidebar-2 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #sticky-sidebar-2 p {
+    margin: 10px 0;
+  }
+  
+  #sticky-sidebar-2 .book-btn {
+    background-color:#0b662c; /* Bright eco-themed gold */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #sticky-sidebar-2 .book-btn:hover {
+    background-color: #FFA500; /* Bright orange on hover */
+  }
+  
+  @keyframes slideIn {
+    from {
+      left: -250px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    #sticky-sidebar-2 {
+      width: 180px;
+    }
+  
+    #sticky-sidebar-2 .book-btn {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  }
+
+  /* ======================================================================================== */
+
+
+
+
+
+
+
+/* TESTIMONIAL ============================================================================= */
+
+
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  blockquote {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 5px solid #28a745;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  blockquote p {
+    font-style: italic;
+
+  }
+  
+  blockquote-footer {
+    margin-top: 15px;
+    color: #777;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #28a74636;
+    border-radius: 50%;
+
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* ================================================================================================ */
+
+
+
+
+
+/* ABOUT SECTION ===================================================================== */
+
+
+
+#about-eco-travel-div{
+    background-color: #124c1d20;
+    display: flex;
+}
+#about-eco-travel-div .col-md-6{
+    padding: 30px;
+    font-size: large;
+    width: 40%;
+}
+
+#image-about-eco{
+    width: 60%;
+    text-align: center;
+}
+#image-about-eco video{
+    margin-top: 3%;
+    width: 80%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom:#0b662c solid 10px;
+}
+
+
+
+/* ======================================================================================= */
+
+
+
+
+
+
+
+
+/* Hero Section */
+.eco-hero {
+    background-image: url('/images/montain.png'); /* Change to your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: #0b662c solid 6px;
+}
+
+.eco-hero-content {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.eco-hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.eco-hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.dream-description{
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eco-learn-more {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    text-decoration: none;
+}
+
+.eco-search-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    width: 35%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.eco-search-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.eco-search-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.eco-search-form select,
+.eco-search-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-eco-search {
+    background-color: #0b662c; /* Orange color */
+    color: white;
+    width: 100%;
+}
+
+
+
+/* Gallery Section Styling */
+.gallery-section {
+    padding: 20px;
+  }
+  
+  .gallery-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; /* Adds space between the images */
+  }
+  
+  .gallery-item {
+    flex: 1 1 30%; /* Ensures three items in a row with responsive resizing */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Date and Overlay Info */
+  .gallery-info {
+    padding: 10px;
+    background-color: #4CAF50; /* Eco-friendly green */
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .gallery-date {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Media query for responsiveness on smaller screens */
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex: 1 1 45%; /* Two items per row on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-item {
+      flex: 1 1 100%; /* One item per row on mobile */
+    }
+  }
+  
+
+
+/* echo slide  */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .eco-slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .eco-package-item {
+    flex: 1 0 33.0%; /* Display 3 packages on screen */
+        /* Ensure all elements take space */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transform: scale(0.95);
+  }
+  
+  .eco-package-item.active {
+    opacity: 1;
+  }
+  /* Marker styling */
+.slider-markers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .slider-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd; /* Default marker color */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .slider-marker.active {
+    background-color: #007bff; /* Active marker color */
+  }
+  
+
+
+
+/* =============================================================== */
+
+
+
+
+
+
+
+/* Sustainability Section Styles ============================================================================ */
+#sustainability-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#sustainability-heading {
+    font-size: 2.5rem; /* Larger heading for emphasis */
+    color: #124c1d; /* Darker shade for contrast */
+    margin-bottom: 30px; 
+    /* Space below the heading */
+}
+
+#sustainability-row {
+    margin-top: 20px; /* Space above the row */
+    margin: 10px;
+}
+
+#sustainability-row .col-md-4 {
+    padding: 15px; /* Padding for individual columns */
+}
+#sustainability-row p{
+    font-size: 22px;
+}
+#sustainability-row h5{
+    color: #124c1d;
+}
+#sustainability-row div{
+    transform: scale(0.95);
+}
+#carbon-offset, #eco-lodging, #local-communities {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Internal padding */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Card shadow */
+}
+
+#carbon-offset:hover, #eco-lodging:hover, #local-communities:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#carbon-offset img, 
+#eco-lodging img, 
+#local-communities img {
+    width: 100%; /* Full-width images */
+    border-radius: 10px; /* Rounded corners for images */
+    max-height: 200px; /* Set maximum height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+/* DESTINATION */
+.map-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: medium;
+}
+.map-container #image-eco img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.map-container p{
+    margin-bottom: 5px;
+}
+.map-container #image-eco{
+    width: 40%;
+}
+
+
+
+/* ================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER ===========================================================================*/
+
+
+    .quick-links {
+        margin: 20px 0; /* Space above and below quick links */
+    }
+    .footer #links-footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer #links-footer div{
+        width: 30%;
+        text-align: left;
+        font-size: 17px;
+    }
+    
+    .quick-links h4 {
+        margin-bottom: 10px; /* Space below the heading */
+    }
+    
+    .quick-links ul {
+        padding: 0; /* Remove default padding */
+    }
+    
+    .quick-links li {
+        list-style: none; /* Remove bullets */
+        margin: 5px 0; /* Space between list items */
+    }
+    
+    .quick-links a {
+        color: #fff; /* Link color */
+        text-decoration: none; /* Remove underline */
+    }
+    
+    .quick-links a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
+    .contact-info {
+        margin-top: 20px; /* Space above contact info */
+    }
+    
+    .contact-info p {
+        margin: 5px 0; /* Space between contact info items */
+    }
+    
+    .input-group {
+        display: flex; /* Align input and button in a row */
+        justify-content: center; /* Center the input group */
+    }
+    
+    input[type="email"] {
+        border-radius: 0; /* Remove rounded corners for a modern look */
+        border: none; /* No border */
+    }
+    
+    input[type="email"]:focus {
+        outline: none; /* Remove outline on focus */
+    }
+    
+    .btn-primary {
+        border-radius: 0; /* Remove rounded corners for a modern look */
+        margin-left: -1px; /* Align the button with the input */
+    }
+    
+    .footer h3,
+    .footer h4 {
+        color: #28a745; /* Green color for headings */
+    }
+
+
+
+    .footer #mission-not-for-computer{
+        display: none !important;
+    }
+
+
+
+
+
+
+
+
+
+
+}
