@@ -44,7 +44,7 @@ html {
         font-size: 19px;
      }
      .hero-section {
-        background-image: url('/images/Vaavu\ Atoll\,\ Maldives.png');
+        background-image: url('Vaavu\ Atoll\,\ Maldives.png');
         background-size: cover;
         background-position: center;
         color: white;
@@ -250,7 +250,7 @@ display: none;
 
 /* Hero Section */
 .eco-hero {
-    background-image: url('/images/montain.png'); /* Change to your image path */
+    background-image: url('montain.png'); /* Change to your image path */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -696,7 +696,7 @@ display: none;
 
     /* HERO SECTION TOP ================================================================ */
     .hero-section {
-        background-image: url('/images/Vaavu\ Atoll\,\ Maldives.png');
+        background-image: url('Vaavu\ Atoll\,\ Maldives.png');
         background-size: cover;
         background-position: center;
         color: white;
@@ -751,7 +751,7 @@ display: none;
 }
 #sticky-sidebar {
     position: fixed;
-    top: 30%; /* 50% from top to center it vertically */
+    top: 50%; /* 50% from top to center it vertically */
     left: 0; /* Stick it to the left side of the screen */
     transform: translateY(-50%); /* Adjust to vertically center */
     width: 150px;
@@ -983,7 +983,7 @@ display: none;
 
 /* Hero Section */
 .eco-hero {
-    background-image: url('/images/montain.png'); /* Change to your image path */
+    background-image: url('montain.png'); /* Change to your image path */
     background-size: cover;
     background-position: center;
     display: flex;
