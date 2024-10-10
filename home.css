@@ -78,13 +78,13 @@ html {
       }
       #packages .row .col-md-4 .travel-card{
        display: flex;
-       flex-direction: row;
+       flex-direction: column;
        width: 100%;
        margin-bottom: 15px;
 
       }
       #packages .row .col-md-4 .travel-card img{
-       width: 50%;
+       width: 90%;
        object-fit: cover;
        object-position: center;
        border-radius: 20px;
